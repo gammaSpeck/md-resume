@@ -2,10 +2,10 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles, Theme, createStyles, Chip } from '@material-ui/core'
+import { useSelector } from 'react-redux'
 
-import Resume from '../configs/resume-structure'
 import SectionHeading from './SectionHeading'
-const { skills } = Resume
+import { RootState } from '../store'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Skills = () => {
   const classes = useStyles()
+  const { skills } = useSelector((state: RootState) => state.app.resume)
 
   return (
     <div>

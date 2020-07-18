@@ -1,6 +1,6 @@
 export default {
   personalInfo: {
-    fullName: 'Madhusoodhanan KM',
+    fullName: 'Madhusoodhanan KMS',
     jobStatus: 'Full Stack Developer', // Can also be the post you are looking for
     avatarPic: 'URL',
     contact: {
@@ -22,7 +22,7 @@ export default {
       summary: {
         title: 'Responsibilities',
         actions: [
-          `Built architectural frameworks in NodeJS and React.js for the company. Frameworks which helps the company's major tech-stack to shift from Java and Angular 1.6 to newer, relavent technologies.`,
+          `Built architectural frameworks in NodeJS and React.js for the company. Frameworks which helps the company's major tech-stack to shift from Java and Angular 1.6 to newer, relevant technologies.`,
           `Built micro-services with the serverless framework.`,
           `Integrate internally-developed micro-services, as well as marketplace 3rd party modules into our projects.`,
           `Admin Console: Designed and built the MVP and launched beta; It is an administrative tool used by each one of our clients and our support teams.`,
@@ -76,11 +76,11 @@ export default {
     { group: 'Coding languages', list: ['Javascript', 'Typescript', 'Shell', 'Python'] },
     {
       group: 'Backend',
-      list: ['Node', 'Express', 'AWS', 'Serverless', 'Kubernetes', 'Terraform', 'MySQL', 'MongoDB', 'Redis']
+      list: ['Node', 'Express', 'AWS', 'Serverless', 'Jenkins', 'Kubernetes', 'Terraform', 'MySQL', 'Redis', 'MongoDB']
     },
     {
       group: 'Frontend',
-      list: ['React', 'Redux', 'Thunk', 'MUI', 'Bootstrap4', 'AntUI', 'SASS', 'Less', 'Webpack4', 'Babel']
+      list: ['React', 'Redux', 'Next JS', 'MUI', 'Bootstrap4', 'SASS', 'Less', 'Webpack4', 'Babel']
     },
     {
       group: 'Testing frameworks',

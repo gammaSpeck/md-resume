@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '@material-ui/core/Container'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Grid from '@material-ui/core/Grid'
@@ -10,6 +10,10 @@ import Education from './Education'
 import Skills from './Skills'
 import Languages from './Languages'
 import GetAppIcon from '@material-ui/icons/GetApp'
+import { useDispatch } from 'react-redux'
+import configs from '../configs'
+import { getResume } from '../store'
+import BackdropLoader from './BackdropLoader'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -39,11 +43,18 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const App = () => {
   const classes = useStyles()
-  const fileUrl = `${process.env.PUBLIC_URL}/madhu_km.pdf`
+  const dispatch = useDispatch()
+
+  const fileUrl = `${configs.publicURL}/resume.pdf`
+
+  useEffect(() => {
+    dispatch(getResume())
+  }, [dispatch])
 
   return (
     <div className={classes.app}>
       <CssBaseline />
+      <BackdropLoader />
       <Fab color='primary' aria-label='download' className={classes.fab} href={fileUrl} download>
         <GetAppIcon />
       </Fab>

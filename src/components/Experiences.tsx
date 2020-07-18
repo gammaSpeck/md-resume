@@ -3,11 +3,11 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { ListItem, ListItemText, List, ListItemIcon, createStyles, makeStyles, Theme } from '@material-ui/core'
 import BulletIcon from '@material-ui/icons/FiberManualRecord'
+import { useSelector } from 'react-redux'
 
 import DateRange from './DateRange'
 import SectionHeading from './SectionHeading'
-import Resume from '../configs/resume-structure'
-const { experiences } = Resume
+import { RootState } from '../store'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Experiences = () => {
   const classes = useStyles()
+  const { experiences } = useSelector((state: RootState) => state.app.resume)
+
   return (
     <>
       <SectionHeading>Experience</SectionHeading>

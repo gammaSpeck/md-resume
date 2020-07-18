@@ -2,12 +2,11 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { Divider, makeStyles, Theme, createStyles } from '@material-ui/core'
+import { useSelector } from 'react-redux'
 
-import Resume from '../configs/resume-structure'
 import DateRange from './DateRange'
 import SectionHeading from './SectionHeading'
-
-const { education } = Resume
+import { RootState } from '../store'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -27,6 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Education = () => {
   const classes = useStyles()
+  const { education } = useSelector((state: RootState) => state.app.resume)
 
   return (
     <>

@@ -2,18 +2,16 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
-import Resume from '../configs/resume-structure'
 import EmailIcon from '@material-ui/icons/Email'
 import HomeIcon from '@material-ui/icons/Home'
 import CallIcon from '@material-ui/icons/Call'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { makeStyles, Theme, createStyles, Avatar } from '@material-ui/core'
-import avatar from '../assets/headshot.png'
+import { useSelector } from 'react-redux'
+import { RootState } from '../store'
 
-const {
-  personalInfo: { fullName, jobStatus, contact }
-} = Resume
+import avatar from '../assets/avatar.png'
 
 const contactIcons = {
   mobile: CallIcon,
@@ -25,6 +23,7 @@ const contactIcons = {
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    bold: { fontWeight: 'bold' },
     avatar: {
       width: theme.spacing(20),
       height: theme.spacing(20)
@@ -45,6 +44,7 @@ const renderIcon = (key: TKeyType) => {
 
 const PersonalInfo = () => {
   const classes = useStyles()
+  const { fullName, jobStatus, contact } = useSelector((state: RootState) => state.app.resume.personalInfo)
 
   const ContactInfo = Object.entries(contact).map(([k, v]) => (
     <Grid item xs={12} md={6} container className={classes.contactInfo} key={k}>
@@ -59,10 +59,10 @@ const PersonalInfo = () => {
     <>
       <Box clone order={{ xs: 2, sm: 1 }}>
         <Grid item xs={12} sm={7}>
-          <Typography variant='h3' gutterBottom>
+          <Typography variant='h4' gutterBottom className={classes.bold}>
             {fullName}
           </Typography>
-          <Typography variant='h5' gutterBottom color='primary' style={{ fontWeight: 'bold' }}>
+          <Typography variant='h5' gutterBottom color='primary' className={classes.bold}>
             {jobStatus}
           </Typography>
           <Grid container item xs={12} alignItems='flex-end' spacing={1}>
