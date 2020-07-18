@@ -45,7 +45,7 @@ const App = () => {
   const classes = useStyles()
   const dispatch = useDispatch()
 
-  const fileUrl = `${configs.publicURL}/resume.pdf`
+  const fileUrl = `${window.location.origin}/resume.pdf`
 
   useEffect(() => {
     dispatch(getResume())
