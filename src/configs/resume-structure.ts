@@ -87,11 +87,11 @@ export default {
       list: ['Jest', 'Mocha', 'Swagger.io', 'Postman']
     }
   ],
-  socialProfiles: [{ name: 'GitHub', link: 'https://github.com/gammaSpeck' }],
   languages: [
     { name: 'English', proficiency: 'Advanced' },
     { name: 'Hindi', proficiency: 'Proficient' },
     { name: 'Tamil', proficiency: 'Intermediate' },
     { name: 'Malayalam', proficiency: 'Intermediate' }
-  ]
+  ],
+  socialProfiles: [{ name: 'GitHub', link: 'https://github.com/gammaSpeck' }]
 }
