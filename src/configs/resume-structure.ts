@@ -1,6 +1,6 @@
 export default {
   personalInfo: {
-    fullName: 'Madhusoodhanan KMS',
+    fullName: 'Madhusoodhanan KM',
     jobStatus: 'Full Stack Developer', // Can also be the post you are looking for
     avatarPic: 'URL',
     contact: {

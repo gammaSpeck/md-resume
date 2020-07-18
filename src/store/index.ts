@@ -4,9 +4,15 @@ import configs from '../configs'
 import InitialResume from '../configs/resume-structure'
 import { IInitialState, IResume } from './IStore'
 
+const headers = {
+  'Content-Type': 'application/json',
+  Accept: 'application/json',
+  'Cache-Control': 'no-cache'
+}
+
 export const getResume = createAsyncThunk('appStore/getResume', async (_, { rejectWithValue }) => {
   try {
-    const { data } = await Axios.get(configs.resumePublicURL)
+    const { data } = await Axios.get(configs.resumePublicURL, { headers })
     return data
   } catch (err) {
     const { response } = err
