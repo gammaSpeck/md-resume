@@ -96,7 +96,7 @@
     },
     {
       "group": "Testing frameworks",
-      "list": ["Jest", "Mocha", "Swagger.io", "Postman", "TEST"]
+      "list": ["Jest", "Mocha", "Swagger.io", "Postman"]
     }
   ],
   "languages": [
