@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "fullName": "Madhusoodhanan KMS",
-    "jobStatus": "Full Stack Developer", // Can also be the post you are looking for
+    "jobStatus": "Full Stack Developer",
     "avatarPic": "URL",
     "contact": {
       "mobile": "+91-9738575801",
@@ -36,11 +36,8 @@
       "institution": "CMRIT",
       "location": "Bengaluru, India",
       "dateRange": "2015-2019",
-      "achievements": [
-        "",
-        ""
-      ],
-      "grade": "7.3 / 10" // CGPA
+      "achievements": ["", ""],
+      "grade": "7.3 / 10"
     },
     {
       "title": "PUC - PCMB",
@@ -63,25 +60,20 @@
     {
       "title": "Intelligent Intrusion Alerting",
       "dateRange": "03/2019",
-      "location": "Coimbatore, India", // Optional
+      "location": "Coimbatore, India",
       "summary": "A smart system that photographs, identifies and alerts using ML and Image Processing."
     },
     {
       "title": "IoT Railway Gate Control",
       "dateRange": "02/0217",
-      "location": "Udaipur, India", // Optional
+      "location": "Udaipur, India",
       "summary": "A multi-tier IoT system that senses train movements, and automatically closes the railway crossing gate."
     }
   ],
   "skills": [
     {
       "group": "Coding languages",
-      "list": [
-        "Javascript",
-        "Typescript",
-        "Shell",
-        "Python"
-      ]
+      "list": ["Javascript", "Typescript", "Shell", "Python"]
     },
     {
       "group": "Backend",
@@ -100,26 +92,11 @@
     },
     {
       "group": "Frontend",
-      "list": [
-        "React",
-        "Redux",
-        "Next JS",
-        "MUI",
-        "Bootstrap4",
-        "SASS",
-        "Less",
-        "Webpack4",
-        "Babel"
-      ]
+      "list": ["React", "Redux", "Next JS", "MUI", "Bootstrap4", "SASS", "Less", "Webpack4", "Babel"]
     },
     {
       "group": "Testing frameworks",
-      "list": [
-        "Jest",
-        "Mocha",
-        "Swagger.io",
-        "Postman"
-      ]
+      "list": ["Jest", "Mocha", "Swagger.io", "Postman"]
     }
   ],
   "languages": [
