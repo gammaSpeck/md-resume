@@ -1,44 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# md-resume
 
-## Available Scripts
+This is a sample full stack developer resume template that reads data from a JSON object and dynamically generates the HTML content for you. An example of this can be shown at this [sample-resume](https://resume.madhukm.com/). This is only one available template that will be generated but feel free to contribute and add more templates.
 
-In the project directory, you can run:
+### `Pre-requisites`
 
-### `yarn start`
+1. Just make sure you have a github account, LOL 😛
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Steps to make your own resume`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Fork this repository.
+2. To customize it for your needs the only files you will need to change are:
 
-### `yarn test`
+   - `/public/*` (This includes favicons). Highly recommend to use [THIS SITE](https://convertio.co/jpg-ico/). I used the same
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     - The `resume.json` is very important as that is the public file that shall be queried for to ftech most recent resume json. (In order to get the same Resume structure, do not change the JSON structure) It should ideally be in sync with `resume-structure.ts` (mentioned below)
+     - The `resume.pdf` is the PDF version of the whole page in Laptop mode. I used [Fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) to get a PDF version of the page. (This is a hack. If someone finds a better way to convert HTML -> PDF, kindly let me know as well !)
 
-### `yarn build`
+   - `/src/configs/resume-structure.ts` : It is very important that this file and the `resume.json` (mentioned above stay in sync). The data inside them is ideally the same.
+   - `/src/configs/index.ts` : There is just one variable you need to change which is the `resumePublicURL`. It should point to the raw github content of the `resume.json` in your forked repository.
+   - `/.github/workflows/master_deploy.yml` : To set up your own workflow follow [this YouTube video](https://www.youtube.com/watch?v=N63C0mkFDFw) or [this very nice blog post](https://keithweaver.ca/lesson/deploy-react-gh-pages-using-github-actions)
+   - `/CNAME` : Remove this file, and update the `/package.json` **_deploy-npm-script_** if you **don't** plan to use a custom Domain for your deployment.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Push your code to your master 😄 (The pipeline will kick in and your app will be hosted on gh-pages)
+4. **NOTE**: Just make sure your Repository is PUBLIC else the raw github URL to fetch the updated latest `resume.json` won't work.
+5. After you have deployed this app, just change that one JSON file, and your resume site will automatically take the new content!!🤗
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+- The UI Framework used was [MUI](https://material-ui.com/)
 
-### `yarn eject`
+## Ways to show appreciation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you liked the content, please do the following:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Star this repository ⭐
+- Fork it! 🍴
+- I'd say Like and Subscribe 😂, but I don't have a YouTube channel (Yet)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributors
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Madhusoodhanan KM
