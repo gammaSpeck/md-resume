@@ -1,0 +1,32 @@
+name: MasterDeployCI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+    steps:
+      - name: Checking out latest code
+        uses: actions/checkout@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Deploy to GH Pages
+        run: |
+          git config --global user.email madhukm3141@gmail.com
+          git config --global user.name gammaSpeck
+          git remote set-url origin https://${{secrets.MD_ACCESS_TOKEN}}@github.com/gammaSpeck/md-resume.git
+          npm run deploy
+
+      - name: Updating Domain
+        run: echo "Update domain"
