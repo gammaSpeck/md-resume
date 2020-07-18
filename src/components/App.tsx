@@ -11,7 +11,6 @@ import Skills from './Skills'
 import Languages from './Languages'
 import GetAppIcon from '@material-ui/icons/GetApp'
 import { useDispatch } from 'react-redux'
-import configs from '../configs'
 import { getResume } from '../store'
 import BackdropLoader from './BackdropLoader'
 
