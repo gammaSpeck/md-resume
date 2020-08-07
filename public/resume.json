@@ -91,7 +91,7 @@
     },
     {
       "group": "Frontend",
-      "list": ["React", "Redux", "Next JS", "MUI", "Bootstrap4", "SASS", "Less", "Webpack4", "Babel"]
+      "list": ["React", "Redux", "Next JS", "MUI", "Bootstrap4", "SASS", "Less", "Webpack4"]
     },
     {
       "group": "Testing frameworks",
