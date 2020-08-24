@@ -7,8 +7,8 @@ export default {
       mobile: '+91-9738575801',
       email: 'madhukm3141@gmail.com',
       address: 'Bengaluru, Karnataka, India',
-      github: 'github.com/gammaSpeck',
-      linkedIn: 'linkedin.com/in/madhusoodhanan-km'
+      github: 'https://github.com/gammaSpeck',
+      linkedIn: 'https://linkedin.com/in/madhusoodhanan-km'
     }
   },
   experiences: [
@@ -16,19 +16,25 @@ export default {
       title: 'Associate Software Engineer',
       company: 'mscripts',
       location: 'Bengaluru, India',
-      dateRange: '01/2019 - Ongoing',
+      dateRange: '06/2019 - Ongoing',
       aboutCompany:
         'Healthcare providers in the US use mscripts to communicate digitally with patients about their health.',
       summary: {
         title: 'Responsibilities',
         actions: [
-          `Built architectural frameworks in NodeJS and React.js for the company. Frameworks which helps the company's major tech-stack to shift from Java and Angular 1.6 to newer, relevant technologies.`,
-          `Built micro-services with the serverless framework.`,
-          `Integrate internally-developed micro-services, as well as marketplace 3rd party modules into our projects.`,
-          `Admin Console: Designed and built the MVP and launched beta; It is an administrative tool used by each one of our clients and our support teams.`,
-          `Used Scrum Agile Methodology in my work (Daily Scrum Meetings, Planning Poker, Sprint Backlog, 1on1 meetings.`
+          "Built architectural frameworks in NodeJS and React.js for the company. Frameworks which helps the company's major tech-stack to shift from Java and Angular 1.6 to newer, relevant technologies.",
+          'Built micro-services with the serverless framework.',
+          'Integrate internally-developed micro-services, as well as marketplace 3rd party modules into our projects.',
+          'Admin Console: Designed and built the MVP and launched beta; It is an administrative tool used by each one of our clients and our support teams.',
+          'Used Scrum Agile Methodology in my work (Daily Scrum Meetings, Planning Poker, Sprint Backlog, 1on1 meetings.'
         ]
       }
+    },
+    {
+      title: 'Software Engineering Intern',
+      company: 'mscripts',
+      location: 'Bengaluru, India',
+      dateRange: '01/2019 - 06/2019'
     }
   ],
   education: [

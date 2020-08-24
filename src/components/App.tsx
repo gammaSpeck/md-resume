@@ -11,7 +11,7 @@ import Skills from './Skills'
 import Languages from './Languages'
 import GetAppIcon from '@material-ui/icons/GetApp'
 import { useDispatch } from 'react-redux'
-import { getResume } from '../store'
+import { getResume, setLoader } from '../store'
 import BackdropLoader from './BackdropLoader'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -47,7 +47,8 @@ const App = () => {
   const fileUrl = `${window.location.origin}/resume.pdf`
 
   useEffect(() => {
-    dispatch(getResume())
+    // dispatch(getResume())
+    dispatch(setLoader(false))
   }, [dispatch])
 
   return (

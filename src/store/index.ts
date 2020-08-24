@@ -25,7 +25,11 @@ const initialState: IInitialState = {
 const AppStore = createSlice({
   name: 'appStore',
   initialState,
-  reducers: {},
+  reducers: {
+    setLoader: (state, { payload }: { payload: boolean }) => {
+      state.isLoading = payload
+    }
+  },
   extraReducers: (builder) => {
     builder.addCase(getResume.fulfilled, (state, { payload }: { payload: IResume }) => {
       state.resume = payload
@@ -38,7 +42,7 @@ const AppStore = createSlice({
   }
 })
 
-// export const {} = AppStore.actions
+export const { setLoader } = AppStore.actions
 
 export const store = configureStore({
   reducer: {

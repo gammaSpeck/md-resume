@@ -27,29 +27,35 @@ const Experiences = () => {
         <Grid container spacing={0} key={title}>
           <Grid item xs={12}>
             <Typography variant='h6'>{title}</Typography>
-            <Typography variant='subtitle2'>{company}</Typography>
-          </Grid>
-          <Grid item xs={12} container>
-            <DateRange range={dateRange} location={location} />
-          </Grid>
-          <Grid item>
-            <Typography variant='body1' gutterBottom>
-              {aboutCompany}
+            <Typography variant='subtitle2' style={{ fontWeight: 'bold' }} color='primary'>
+              {company}
             </Typography>
           </Grid>
-          <Grid item>
-            <Typography variant='body1'>{summary.title}</Typography>
-            <List dense>
-              {summary.actions.map((action: string, i: number) => (
-                <ListItem className={classes.noPadding} key={i}>
-                  <ListItemIcon style={{ minWidth: '1.2rem' }}>
-                    <BulletIcon color='disabled' className={classes.smallIcon} />
-                  </ListItemIcon>
-                  <ListItemText primary={action} />
-                </ListItem>
-              ))}
-            </List>
+          <Grid item xs={12} container alignItems='center'>
+            <DateRange range={dateRange} location={location} />
           </Grid>
+          {aboutCompany && (
+            <Grid item>
+              <Typography variant='body1' gutterBottom>
+                {aboutCompany}
+              </Typography>
+            </Grid>
+          )}
+          {summary && (
+            <Grid item>
+              <Typography variant='body1'>{summary.title}</Typography>
+              <List dense>
+                {summary.actions.map((action: string, i: number) => (
+                  <ListItem className={classes.noPadding} key={i}>
+                    <ListItemIcon style={{ minWidth: '1.2rem' }}>
+                      <BulletIcon color='disabled' className={classes.smallIcon} />
+                    </ListItemIcon>
+                    <ListItemText primary={action} />
+                  </ListItem>
+                ))}
+              </List>
+            </Grid>
+          )}
         </Grid>
       ))}
     </>

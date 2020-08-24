@@ -30,7 +30,7 @@ const Projects = () => {
             <Grid item>
               <Typography variant='h6'>{title}</Typography>
             </Grid>
-            <Grid item xs={12} container>
+            <Grid item xs={12} container alignItems='center'>
               <DateRange range={dateRange} location={location} />
             </Grid>
             <Grid item xs={12} container alignItems='center'>

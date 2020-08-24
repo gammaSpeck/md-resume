@@ -12,8 +12,8 @@ export interface IExperience {
   company: string
   location: string
   dateRange: string
-  aboutCompany: string
-  summary: {
+  aboutCompany?: string
+  summary?: {
     title: string
     actions: string[]
   }

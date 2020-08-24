@@ -38,7 +38,7 @@ const Education = () => {
           </Grid>
           <Grid item xs={5}>
             <Typography variant='body1'>{institution}</Typography>
-            <Grid item xs={12} container>
+            <Grid item xs={12} container alignItems='center'>
               <DateRange range={dateRange} />
             </Grid>
           </Grid>

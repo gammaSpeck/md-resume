@@ -10,6 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { makeStyles, Theme, createStyles, Avatar } from '@material-ui/core'
 import { useSelector } from 'react-redux'
 import { RootState } from '../store'
+import Link from '@material-ui/core/Link'
 
 import avatar from '../assets/avatar.png'
 
@@ -47,11 +48,17 @@ const PersonalInfo = () => {
   const { fullName, jobStatus, contact } = useSelector((state: RootState) => state.app.resume.personalInfo)
 
   const ContactInfo = Object.entries(contact).map(([k, v]) => (
-    <Grid item xs={12} md={6} container className={classes.contactInfo} key={k}>
+    <Grid item xs={12} md={6} container className={classes.contactInfo} key={k} alignItems='center'>
       {renderIcon(k as TKeyType)}
-      <Typography variant='caption' display='inline'>
-        {v}
-      </Typography>
+      {['github', 'linkedIn'].includes(k) ? (
+        <Link variant='caption' display='inline' href={v} target='_blank' style={{ textDecoration: 'none' }}>
+          {v.replace('https://', '')}
+        </Link>
+      ) : (
+        <Typography variant='caption' display='inline'>
+          {v}
+        </Typography>
+      )}
     </Grid>
   ))
 
