@@ -66,13 +66,13 @@ export default {
   projects: [
     {
       title: 'Intelligent Intrusion Alerting',
-      dateRange: '03/2019',
+      dateRange: '03/2018',
       location: 'Coimbatore, India', // Optional
       summary: 'A smart system that photographs, identifies and alerts using ML and Image Processing.'
     },
     {
       title: 'IoT Railway Gate Control',
-      dateRange: '02/0217',
+      dateRange: '02/2017',
       location: 'Udaipur, India', // Optional
       summary:
         'A multi-tier IoT system that senses train movements, and automatically closes the railway crossing gate.'
