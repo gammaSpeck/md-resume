@@ -68,13 +68,13 @@
   "projects": [
     {
       "title": "Intelligent Intrusion Alerting",
-      "dateRange": "03/2019",
+      "dateRange": "03/2018",
       "location": "Coimbatore, India",
       "summary": "A smart system that photographs, identifies and alerts using ML and Image Processing."
     },
     {
       "title": "IoT Railway Gate Control",
-      "dateRange": "02/0217",
+      "dateRange": "02/2017",
       "location": "Udaipur, India",
       "summary": "A multi-tier IoT system that senses train movements, and automatically closes the railway crossing gate."
     }
