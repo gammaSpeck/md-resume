@@ -60,7 +60,7 @@ export default {
       location: 'Bengaluru, India',
       dateRange: '2015',
       achievements: [],
-      grade: '84%'
+      grade: '92%'
     }
   ],
   projects: [
