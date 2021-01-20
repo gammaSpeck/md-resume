@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.background.paper,
       borderStyle: 'solid',
       borderWidth: theme.spacing(0.1),
-      padding: '2rem 3rem',
+      padding: '3rem',
       [theme.breakpoints.down('sm')]: {
-        padding: '1rem 2rem'
+        padding: '1.5rem 2rem'
       },
       [theme.breakpoints.down('xs')]: {
         padding: '1rem'

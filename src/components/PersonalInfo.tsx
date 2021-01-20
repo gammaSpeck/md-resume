@@ -48,11 +48,11 @@ const PersonalInfo = () => {
   const { fullName, jobStatus, contact } = useSelector((state: RootState) => state.app.resume.personalInfo)
 
   const ContactInfo = Object.entries(contact).map(([k, v]) => (
-    <Grid item xs={12} md={6} container className={classes.contactInfo} key={k} alignItems='center'>
+    <Grid item xs={12} sm={6} container className={classes.contactInfo} key={k} alignItems='center'>
       {renderIcon(k as TKeyType)}
       {['github', 'linkedIn'].includes(k) ? (
         <Link variant='caption' display='inline' href={v} target='_blank' style={{ textDecoration: 'none' }}>
-          {v.replace('https://', '')}
+          {v.split('/').pop()}
         </Link>
       ) : (
         <Typography variant='caption' display='inline'>

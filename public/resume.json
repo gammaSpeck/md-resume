@@ -14,18 +14,18 @@
   "experiences": [
     {
       "title": "Associate Software Engineer",
-      "company": "mscripts",
+      "company": "mscripts, a Cardinal Health Company",
       "location": "Bengaluru, India",
       "dateRange": "06/2019 - Ongoing",
       "aboutCompany": "Healthcare providers in the US use mscripts to communicate digitally with patients about their health.",
       "summary": {
         "title": "Responsibilities",
         "actions": [
-          "Built architectural frameworks in NodeJS and React.js for the company. Frameworks which helps the company's major tech-stack to shift from Java and Angular 1.6 to newer, relevant technologies.",
-          "Built micro-services with the serverless framework.",
-          "Integrate internally-developed micro-services, as well as marketplace 3rd party modules into our projects.",
+          "Built architectural frameworks in NodeJS and React.js for the company.",
+          "Architected a project from the ground up upto the k8s deployment, and mentored the team in the project's entire SDLC.",
           "Admin Console: Designed and built the MVP and launched beta; It is an administrative tool used by each one of our clients and our support teams.",
-          "Used Scrum Agile Methodology in my work (Daily Scrum Meetings, Planning Poker, Sprint Backlog, 1on1 meetings."
+          "Component Owner for multiple components in the company.",
+          "Technical interviewer for campus recruitment."
         ]
       }
     },
@@ -33,7 +33,14 @@
       "title": "Software Engineering Intern",
       "company": "mscripts",
       "location": "Bengaluru, India",
-      "dateRange": "01/2019 - 06/2019"
+      "dateRange": "01/2019 - 06/2019",
+      "summary": {
+        "title": "",
+        "actions": [
+          "Built micro-services using the serverless framework.",
+          "Built shared repository of common reusable modules."
+        ]
+      }
     }
   ],
   "education": [
@@ -85,6 +92,7 @@
       "list": [
         "Javascript",
         "Typescript",
+        "HTML/CSS",
         "Shell",
         "Python"
       ]
@@ -92,15 +100,15 @@
     {
       "group": "Backend",
       "list": [
-        "Node",
+        "NodeJS",
         "Express",
         "AWS",
         "Serverless",
         "Jenkins",
         "Kubernetes",
         "Terraform",
-        "MySQL",
         "Redis",
+        "MySQL",
         "MongoDB"
       ]
     },
@@ -109,9 +117,10 @@
       "list": [
         "React",
         "Redux",
-        "Next JS",
+        "NextJS",
+        "Gatsby",
         "MUI",
-        "Bootstrap4",
+        "Bootstrap",
         "SASS",
         "Less",
         "Webpack4",

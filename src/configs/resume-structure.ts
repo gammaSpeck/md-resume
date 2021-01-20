@@ -87,14 +87,25 @@ export default {
     }
   ],
   skills: [
-    { group: 'Coding languages', list: ['Javascript', 'Typescript', 'Shell', 'Python'] },
+    { group: 'Coding languages', list: ['Javascript', 'Typescript', 'HTML/CSS', 'Shell', 'Python'] },
     {
       group: 'Backend',
-      list: ['Node', 'Express', 'AWS', 'Serverless', 'Jenkins', 'Kubernetes', 'Terraform', 'MySQL', 'Redis', 'MongoDB']
+      list: [
+        'NodeJS',
+        'Express',
+        'AWS',
+        'Serverless',
+        'Jenkins',
+        'Kubernetes',
+        'Terraform',
+        'Redis',
+        'MySQL',
+        'MongoDB'
+      ]
     },
     {
       group: 'Frontend',
-      list: ['React', 'Redux', 'Next JS', 'MUI', 'Bootstrap4', 'SASS', 'Less', 'Webpack4', 'Babel']
+      list: ['React', 'Redux', 'NextJS', 'Gatsby', 'MUI', 'Bootstrap', 'SASS', 'Less', 'Webpack4', 'Babel']
     },
     {
       group: 'Testing frameworks',

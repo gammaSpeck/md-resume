@@ -2,6 +2,7 @@
   "homepage": "https://gammaSpeck.github.io",
   "name": "md-resume",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.10.0",
@@ -28,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build && cp CNAME build/CNAME",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "generate": "ts-node src/scripts/generate-pdf.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +49,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.54",
+    "puppeteer": "^5.5.0",
     "ts-node": "^9.0.0"
   }
 }
