@@ -11,7 +11,7 @@ import Skills from './Skills'
 import Languages from './Languages'
 import GetAppIcon from '@material-ui/icons/GetApp'
 import { useDispatch } from 'react-redux'
-import { getResume } from '../store'
+import { getResume, setLoader } from '../store'
 import BackdropLoader from './BackdropLoader'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.background.paper,
       borderStyle: 'solid',
       borderWidth: theme.spacing(0.1),
-      padding: '3rem',
+      padding: '2rem 3rem',
       [theme.breakpoints.down('sm')]: {
-        padding: '2rem'
+        padding: '1rem 2rem'
       },
       [theme.breakpoints.down('xs')]: {
         padding: '1rem'
@@ -33,9 +33,8 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     fab: {
       margin: theme.spacing(2),
-      position: 'relative',
-      float: 'right',
-      top: '50%'
+      position: 'fixed',
+      right: 0
     }
   })
 )
@@ -47,8 +46,8 @@ const App = () => {
   const fileUrl = `${window.location.origin}/resume.pdf`
 
   useEffect(() => {
-    dispatch(getResume())
-    // dispatch(setLoader(false))
+    // dispatch(getResume())
+    dispatch(setLoader(false))
   }, [dispatch])
 
   return (
