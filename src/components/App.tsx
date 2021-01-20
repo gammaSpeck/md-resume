@@ -11,7 +11,7 @@ import Skills from './Skills'
 import Languages from './Languages'
 import GetAppIcon from '@material-ui/icons/GetApp'
 import { useDispatch } from 'react-redux'
-import { getResume, setLoader } from '../store'
+import { getResume } from '../store'
 import BackdropLoader from './BackdropLoader'
 
 const useStyles = makeStyles((theme: Theme) =>
