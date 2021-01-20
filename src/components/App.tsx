@@ -46,8 +46,8 @@ const App = () => {
   const fileUrl = `${window.location.origin}/resume.pdf`
 
   useEffect(() => {
-    // dispatch(getResume())
-    dispatch(setLoader(false))
+    dispatch(getResume())
+    // dispatch(setLoader(false))
   }, [dispatch])
 
   return (
