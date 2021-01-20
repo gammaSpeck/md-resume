@@ -33,7 +33,10 @@
     "generate": "ts-node src/scripts/generate-pdf.ts"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "off"
+    }
   },
   "browserslist": {
     "production": [
